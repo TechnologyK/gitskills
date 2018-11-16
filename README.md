@@ -1,2 +1,2 @@
 # gitskills
-i am jacky
+Creating a new branch is quick.
