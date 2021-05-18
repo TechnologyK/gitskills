@@ -13,9 +13,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-env:
-  NAME: ${{secrets.NAME}}
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -36,4 +33,6 @@ jobs:
           echo test, and deploy your project.
       
       - name: Print name
+        env:
+          NAME: ${{secrets.NAME}}
         run: echo $NAME
