@@ -39,4 +39,5 @@ jobs:
       - name: Print name
         env:
           NAME: ${{secrets.NAME}}
-        run: echo $NAME
+          AGE: 31
+        run: echo $NAME $AGE
