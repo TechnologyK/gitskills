@@ -39,4 +39,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: job2_step
-      run: date 
+      run: |
+        uname -a
+        date
