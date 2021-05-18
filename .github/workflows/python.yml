@@ -25,7 +25,9 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     
-    - name: Lint with flake8
+    - name: run
+      env:
+        NAME: ${{secrets.NAME}}
       run: |
         python -c "import sys; print(sys.version)"
-        python ./test.py ${{secrets.NAME}}
+        python ./test.py

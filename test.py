@@ -1,8 +1,8 @@
 import datetime
-import sys
+import os
 
 now = datetime.datetime.today()
 print(now)
 
-print('{}个参数'.format(len(sys.argv)))
-print('参数列表：{}'.format(str(sys.argv)))
+NAME = os.environ["NAME"]
+print('NAME:{}'.format(NAME))
