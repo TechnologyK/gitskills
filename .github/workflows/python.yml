@@ -32,3 +32,9 @@ jobs:
       run: |
         python -c "import sys; print(sys.version)"
         python ./test.py
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: job2_step
+      run: date 
