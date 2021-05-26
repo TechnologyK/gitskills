@@ -31,7 +31,9 @@ jobs:
     - name: run
       env:
         NAME1: ${{ secrets.NAME }}
+        super_secret: ${{ secrets.SUPERSECRET }}
       run: |
+        echo "$super_secret"
         python -c "import sys; print(sys.version)"
         python ./test.py
 
