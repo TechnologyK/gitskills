@@ -1,11 +1,15 @@
 import datetime
 import os
+import logging.config
 
-now = datetime.datetime.today()
-print(now)
+if __name__ == '__main__':
+    os.chdir(os.path.dirname(__file__))
+    logging.config.fileConfig('logging.conf')
+    now = datetime.datetime.today()
+    logging.info(now)
 
-NAME = os.environ["NAME1"]
-print('NAME:{}'.format(NAME))
+    NAME = os.environ["NAME1"]
+    logging.info('NAME:{}'.format(NAME))
 
-super_secret = os.environ["super_secret"]
-print('super_secret:{}'.format(super_secret))
+    super_secret = os.environ["super_secret"]
+    logging.info('super_secret:{}'.format(super_secret))
