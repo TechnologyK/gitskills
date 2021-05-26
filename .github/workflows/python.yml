@@ -15,6 +15,9 @@ jobs:
     - name: print default python version
       run: python --version
 
+    - name: print weather
+      run: curl -H "Accept-Language: zh" wttr.in/Zhangjiagang
+
     # 设置服务器时区为东八区
     - name: Set time zone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
