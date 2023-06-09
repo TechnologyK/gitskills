@@ -19,7 +19,8 @@ jobs:
 
     - name: print weather
       run: |
-        curl -H "Accept-Language: zh" wttr.in/Zhangjiagang
+        echo 'print weather'
+        # curl -H "Accept-Language: zh" wttr.in/Zhangjiagang
 
     # 设置服务器时区为东八区
     - name: Set time zone
