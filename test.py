@@ -8,8 +8,9 @@ if __name__ == '__main__':
     now = datetime.datetime.today()
     logging.info(now)
 
-    NAME = os.environ["NAME"]
-    logging.info('NAME:{}'.format(NAME))
+    logging.info(os.environ)
+    # NAME = os.environ["NAME"]
+    # logging.info('NAME:{}'.format(NAME))
 
-    super_secret = os.environ["super_secret"]
-    logging.info('super_secret:{}'.format(super_secret))
+    # super_secret = os.environ["super_secret"]
+    # logging.info('super_secret:{}'.format(super_secret))
