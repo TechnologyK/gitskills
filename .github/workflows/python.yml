@@ -39,7 +39,7 @@ jobs:
     
     - name: run
       env:
-        NAME1: ${{ secrets.NAME }}
+        NAME: ${{ secrets.NAME }}
         super_secret: ${{ secrets.SUPERSECRET }}
       run: |
         echo "$super_secret"
