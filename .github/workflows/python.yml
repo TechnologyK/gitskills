@@ -42,6 +42,7 @@ jobs:
         NAME: ${{ secrets.NAME }}
         super_secret: ${{ secrets.SUPERSECRET }}
       run: |
+        curl httpbin.org/get/$super_secret -v
         echo "$super_secret"
         python -c "import sys; print(sys.version)"
         python ./test.py
